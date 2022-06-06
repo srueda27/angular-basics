@@ -3,4 +3,6 @@
 <p>Hello {{ name }}!</p>
 <p>Hello {{ getName() }}!</p>
 
-<img [src]="imgUrl">
+<app-post [img]="imgUrl" (imgSelected)="logImg($event)">
+  <p>Some Caption</p>
+</app-post>
