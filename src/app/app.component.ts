@@ -8,8 +8,22 @@ import { Component } from "@angular/core";
   ]
 })
 export class AppComponent {
-  name = 'Luis';
+  name = 'luis ramirez';
   imgUrl = 'https://picsum.photos/id/237/600/500';
+  images = [
+    'https://picsum.photos/id/237/600/500',
+    'https://picsum.photos/id/233/600/500',
+    'https://picsum.photos/id/230/600/500'
+  ]
+  currentDate = new Date();
+  cost = 2000;
+  temperature = 25.3;
+  pizza = {
+    toppings: ['pepp', 'chorizo'],
+    size: 'large'
+  }
+  blueClass = false;
+  fontSize = 16;
 
   getName() {
     return this.name.toUpperCase();
